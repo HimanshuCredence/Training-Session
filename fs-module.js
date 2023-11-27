@@ -1,4 +1,4 @@
 /**
  *  fs module for reading and writing files
- *  synchronously and asynchronously
+ *  synchronously and asynchronously.
  */
