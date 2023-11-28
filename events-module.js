@@ -26,12 +26,12 @@ const Pete = new Person("Pete");
 const Gates = new Person("Gates");
 const personArr = [Elsa,Pete,Gates];
 // mapping array in order to set message and emit event
-personArr.map((Person) => {
-    Person.on('displayInfo', function(msg) {
-        console.log(`${Person.name} likes ${msg}`);
+personArr.map((Persons) => {
+    Persons.on('displayInfo', function(msg) {
+        console.log(`${Persons.name} likes ${msg}`);
     });
     // we are emitting event for the array list.
-    Person.emit('displayInfo','Mocha');
+    Persons.emit('displayInfo','Mocha');
 });
 
 Elsa.emit('displayInfo','Latte');
